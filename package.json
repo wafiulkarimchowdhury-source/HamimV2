@@ -1,0 +1,31 @@
+{
+  "name": "hamim-bird",
+  "version": "1.0.0",
+  "description": "Hamim Bird: a paint-balloon aim trainer",
+  "main": "main.js",
+  "author": "Wafi ul Karim Chowdhury",
+  "private": true,
+  "scripts": {
+    "build:www": "python3 tools/build.py",
+    "start": "electron .",
+    "build:win": "electron-builder --win --publish never"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/cli": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.wafi.hamimbird",
+    "productName": "Hamim Bird",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "package.json", "www/**/*", "build/icon.png"],
+    "win": { "target": ["nsis", "portable"], "icon": "build/icon.ico" },
+    "nsis": { "artifactName": "HamimBird-Setup.exe" },
+    "portable": { "artifactName": "HamimBird-Portable.exe" }
+  }
+}

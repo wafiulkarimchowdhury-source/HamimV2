@@ -1,0 +1,6 @@
+{
+  "appId": "com.wafi.hamimbird",
+  "appName": "Hamim Bird",
+  "webDir": "www",
+  "server": { "androidScheme": "https" }
+}
