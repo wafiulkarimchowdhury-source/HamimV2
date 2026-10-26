@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hamim Bird</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@600;700&family=Pixelify+Sans:wght@500;700&family=Silkscreen:wght@400;700&display=swap">
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <h1>Hamim Bird</h1>
+    <div class="tools">
+      <button class="btn-small" id="btnPause" type="button" hidden>Pause</button>
+      <button class="btn-small" id="btnMute" type="button" aria-pressed="false">Sound on</button>
+      <details class="credit" id="credit">
+        <summary>Created by</summary>
+        <div class="credit-body">
+          <p class="by">Wafi ul Karim Chowdhury</p>
+          <a href="https://www.instagram.com/wafi_ul_karim_chowdhury2" target="_blank" rel="noopener noreferrer">@wafi_ul_karim_chowdhury2</a>
+        </div>
+      </details>
+    </div>
+  </header>
+
+  <div class="field" id="field">
+    <canvas id="c" aria-label="Game field. Tap or click to fire."></canvas>
+    <div class="hud" id="hud" hidden>
+      <div class="chip"><span class="k">Lv</span><span class="v" id="hLevel">1</span></div>
+      <div class="chip"><span class="k">Acc</span><span class="v" id="hAcc">--</span></div>
+      <div class="chip"><span class="k">Score</span><span class="v" id="hScore">0</span></div>
+      <div class="chip"><span class="k">Combo</span><span class="v" id="hCombo">x1.0</span></div>
+      <div class="chip gold"><i class="coin"></i><span class="bn">সততা</span><span class="v" id="hCoins">0</span></div>
+      <div class="chip"><div class="lives" id="hLives" aria-label="Lives left"></div></div>
+    </div>
+    <div class="slots" id="slots" hidden></div>
+    <div class="overlay" id="overlay" hidden><div class="panel" id="panel"></div></div>
+  </div>
+</div>
+<script>
+/*__JS__*/
+</script>
+</body>
+</html>
